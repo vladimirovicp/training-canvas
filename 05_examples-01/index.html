@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+  </body>
+
+  <script>
+    //Что будет отображено после выполнения следующего кода?
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // canvas.width = 400;
+    // canvas.height = 200;
+
+    // ctx.fillStyle = "blue";
+
+    // ctx.fillRect(50, 50, 100, 100);
+    // ctx.clearRect(75, 75, 50, 50);
+
+    //Синий прямоугольник с прозрачным квадратом внутри
+
+    //************************************************************************************************
+
+    //Что будет отображено после запуска этого кода?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fillStyle = "red";
+
+    // ctx.arc(150, 75, 50, 0, Math.PI * 2);
+    // ctx.fill();
+
+    //Красный круг в центре холста
+
+    //************************************************************************************************
+    //Что будет отображено после выполнения следующего кода?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fstrokeStyle = "yellow";
+    // ctx.lineWidth = 5;
+    // ctx.fillStyle = "blue";
+
+    // ctx.beginPath();
+    // ctx.moveTo(100, 10);
+    // ctx.lineTo(10, 150);
+    // ctx.lineTo(190, 150);
+    // ctx.fill();
+
+    //************************************************************************************************
+    //Что будет отображено после выполнения следующего кода?
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fillStyle = "green";
+    // ctx.fillRect(20, 25, 500, 100);
+
+    //Зеленый прямоугольник размером 280x100 пикселей в точке (20, 25)
+    //************************************************************************************************
+
+    //Что будет отображено после выполнения следующего кода?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fillStyle = "#001d3d";
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // function drawStar(x, y, size) {
+    //   ctx.beginPath();
+    //   ctx.arc(x, y, size, 0, Math.PI * 2);
+    //   ctx.fillStyle = "#fff";
+    //   ctx.fill();
+    //   ctx.closePath();
+    // }
+
+    // for (let i = 0; i < 100; i++) {
+    //   const x = Math.random() * canvas.width;
+    //   const y = Math.random() * canvas.height;
+    //   const size = Math.random() * 2 + 1;
+    //   drawStar(x, y, size);
+    // }
+
+    // Появляется темно-синий холст со 100 случайно расположенными белыми звездочками разного размера
+
+    //************************************************************************************************
+
+    //Что происходит при запуске этого кода?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.moveTo(50, 50);
+    // ctx.lineTo(150, 50);
+    // ctx.lineTo(100, 120);
+    // ctx.closePath();
+
+    // ctx.fillStyle = "orange";
+    // ctx.fill();
+
+    // ctx.moveTo(150, 50);
+    // ctx.lineTo(200, 50);
+    // ctx.lineTo(150, 120);
+    // ctx.closePath();
+
+    // ctx.fillStyle = "blue";
+    // ctx.fill();
+
+    //Второй треугольник повторно использует существующий путь из первого треугольника, что приводит к неожиданной форме
+
+    //************************************************************************************************
+
+    //Что будет отображено после запуска следующего кода.
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // const img = new Image();
+
+    // img.onload = function () {
+    //   ctx.drawImage(img, 0, 0, img.width, img.height);
+    // };
+
+    // img.src = "pic.jpg";
+
+    //Ширина и высота холста по умолчанию равны 300x150 пикселей, а изображение обрезано
+
+    //************************************************************************************************
+
+    //Что будет отображено после выполнения следующего кода?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fillStyle = "green";
+    // ctx.fillRect(0, 0, 300, 150);
+
+    // ctx.globalAlpha = 0.5;
+
+    // ctx.fillStyle = "yellow";
+    // ctx.fillRect(50, 50, 200, 300);
+
+    //Зеленый холст с полупрозрачным желтым прямоугольным наложением
+
+    //************************************************************************************************
+    //Что выведет следующий код?
+
+    // const canvas = document.createElement("canvas");
+    // document.body.appendChild(canvas);
+    // const ctx = canvas.getContext("2d");
+
+    // ctx.fillStyle = "red";
+    // ctx.fillRect(10, 15, 150, 100);
+
+    // В точке с координатами (10,15) будет нарисован красный прямоугольник размером 150x100 пикселей
+
+    //************************************************************************************************
+    //Что будет отображено после запуска этого кода?
+    const canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = 500;
+    canvas.height = 200;
+
+    ctx.font = "42px Arial";
+    ctx.fillText("Hello, I'm Canvas", 50, 100);
+
+    // Текст “Привет, я Canvas!”, отображаемый в позиции (50, 100) шрифтом Arial размером 42 пикселя
+  </script>
+</html>
